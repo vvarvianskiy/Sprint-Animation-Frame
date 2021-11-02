@@ -1,6 +1,39 @@
-.image {
-  
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: lightgoldenrodyellow;
+}
+
+.fon-conteiner {
+  position: relative;
+  width: 996px;
   height: 400px;
-  width: 955px;
-  background: url(banner_preview/banner_preview_00000.png);
+  border: 1px solid black;
+}
+
+.image {
+  position: relative;
+  position: fixed;
+  height: 400px;
+  width: calc(74325px / 75);
+  background: url(test2.png);
+  transform: perspective(75000px) rotateX(0deg) translateY(0px);
+  -webkit-box-reflect: below 1px linear-gradient(transparent 90%, #0004);
+  animation: animateFenix 2s steps(75);
+}
+@keyframes animateFenix {
+  from {
+    background-position: 0;
+  }
+  to {
+    background-position: 74325px;
+  }
 }
