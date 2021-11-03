@@ -12,14 +12,26 @@ body {
   background: lightgoldenrodyellow;
 }
 
-.fon-conteiner {
+#image {
+  width: 995px;
+  height: 400px;
+  background: url(test2.png);
+  border: 1px solid black;
+}
+
+
+
+
+
+
+/* #fon-conteiner {
   position: relative;
   width: 996px;
   height: 400px;
   border: 1px solid black;
 }
 
-.image {
+#image {
   position: relative;
   position: fixed;
   height: 400px;
@@ -36,4 +48,4 @@ body {
   to {
     background-position: 74325px;
   }
-}
+} */

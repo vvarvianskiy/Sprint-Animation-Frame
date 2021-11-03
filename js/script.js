@@ -1,7 +1,33 @@
 // function animateScript() {
 //   document.getElementById("image").style.backgroundPosition = 
-//   `-256px 0px`;
+//   `-996px 0px`;
 //   }
+  var tID;
+  var    position = 995; //началная точка
+  const  interval = 100; //100 ms интервал которъй пойдет в функцию
+  tID = setInterval ( () => {
+  document.getElementById("image").style.backgroundPosition = `-${position}px 0px`; 
+  //изменение статик на динамик переменную "position"
+  if (position < 74625 ) //общая длина файла
+  { position = position + 995;}
+  //+1 размер картинки
+  else
+  { position = 995;}
+  //ресет к 1 картинки если допло до 74625
+  } 
+    , interval ); //скорости сменъ. можно цъфрой
+   
+
+
+
+
+
+
+
+
+
+
+
 
 
 
